@@ -1,0 +1,47 @@
+# ── Compiled output ───────────────────────────────────────
+out/
+target/
+build/
+*.class
+
+# ── SQLite database ───────────────────────────────────────
+*.db
+*.db-shm
+*.db-wal
+reservation_system.db
+reservation_system.db-shm
+reservation_system.db-wal
+
+# ── Generated ticket files ────────────────────────────────
+tickets/
+
+# ── Maven ─────────────────────────────────────────────────
+.mvn/
+mvnw
+mvnw.cmd
+
+# ── Gradle ────────────────────────────────────────────────
+.gradle/
+
+# ── IDE ───────────────────────────────────────────────────
+.idea/
+*.iml
+.classpath
+.project
+.settings/
+*.eclipse
+
+# ── macOS ─────────────────────────────────────────────────
+.DS_Store
+
+# ── Windows ───────────────────────────────────────────────
+Thumbs.db
+desktop.ini
+
+# ── Logs ──────────────────────────────────────────────────
+*.log
+logs/
+
+# ── Downloaded JARs (manual build) ───────────────────────
+lib/*.jar
+sources.txt

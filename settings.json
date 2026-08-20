@@ -1,0 +1,16 @@
+{
+  "java.project.referencedLibraries": [
+    "lib/**/*.jar"
+  ],
+  "java.project.sourcePaths": [
+    "."
+  ],
+  "java.import.gradle.enabled": true,
+  "java.configuration.updateBuildConfiguration": "automatic",
+  "java.debug.settings.console": "integratedTerminal",
+  "java.debug.settings.forceBuildBeforeLaunch": false,
+  "code-runner.executorMap": {
+    "java": "cd $workspaceRoot && bash run.sh"
+  },
+  "code-runner.runInTerminal": true
+}

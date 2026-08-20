@@ -1,0 +1,35 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Compile Reservation System",
+      "type": "shell",
+      "command": "bash",
+      "args": [
+        "-c",
+        "javac -cp '.:lib/*' $(find . -name '*.java' ! -path './build/*' ! -path './target/*' ! -path './.gradle/*' ! -path './gradle/*')"
+      ],
+      "options": { "cwd": "${workspaceFolder}" },
+      "group": "build",
+      "problemMatcher": ["$javac"]
+    },
+    {
+      "label": "Run Main",
+      "type": "shell",
+      "command": "java",
+      "args": ["-cp", ".:lib/*", "Main"],
+      "options": { "cwd": "${workspaceFolder}" },
+      "dependsOn": ["Compile Reservation System"],
+      "group": {
+        "kind": "test",
+        "isDefault": false
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "focus": true
+      },
+      "problemMatcher": []
+    }
+  ]
+}
